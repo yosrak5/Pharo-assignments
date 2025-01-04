@@ -40,18 +40,6 @@ Class MatrixConverter {
    
 2. **`convertToTraditionalMatrix: aSparseMatrix`**
    - Converts a sparse matrix back into a traditional matrix.
-   
-3. **`sparseMatrix`**
-   - Returns the current sparse matrix.
-   
-4. **`sparseMatrix: aSparseMatrix`**
-   - Sets a new sparse matrix.
-
-5. **`traditionalMatrix`**
-   - Returns the current traditional matrix.
-   
-6. **`traditionalMatrix: aMatrix`**
-   - Sets a new traditional matrix.
 
 ---
 ### Test Screenshots 
