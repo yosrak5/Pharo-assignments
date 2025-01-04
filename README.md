@@ -42,19 +42,6 @@ Class MatrixConverter {
    - Converts a sparse matrix back into a traditional matrix.
 
 ---
-### Test Screenshots 
-## Test Class: MatrixConverterTest
-
-The `MatrixConverterTest` class verifies that the methods in the `MatrixConverter` class work correctly.
-
-### Test Methods
-
-- **`testConvertToSparseMatrix:`**
-   - Tests the conversion from a traditional matrix to a sparse matrix.
-
-- **`testConvertToTraditionalMatrix:`**
-   - Tests the conversion from a sparse matrix to a traditional matrix.
-
 ### MatrixConverterTest Class
 
 The `MatrixConverterTest` class is a unit test class that ensures the correctness of the `MatrixConverter` methods. Below is the class definition:
