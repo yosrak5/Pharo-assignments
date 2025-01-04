@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains two exercises, implemented in Pharo, as part of the requested task . The exercises demonstrate different aspects of the migration process and include tests to validate the functionalities.
+This repository contains two exercises implemented in Pharo, as part of the requested task. The exercises focus on different aspects of the programming process and include test cases to validate the correctness of the functionalities.
 
 ### Exercises
 
