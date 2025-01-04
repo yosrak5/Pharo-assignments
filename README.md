@@ -1,30 +1,30 @@
-# Pharo Exercise Documentation
+# Task Documentation: Pharo Exercises for Fortran Code Migration
 
 ## Overview
 
-This repository contains two exercises implemented in Pharo as part of the task to experiment with the migration of Fortran code. The exercises include:
+This repository contains two exercises, implemented in Pharo, as part of the task to experiment with the migration of Fortran code. The exercises demonstrate different aspects of the migration process and include tests to validate the functionalities.
 
-1. **Hollow Matrix Conversion**: Converts a traditional matrix to a sparse matrix (hollow matrix) and vice versa.
-2. **Pharo Documentation Generator**: Generates documentation for Pharo classes and packages, similar to JavaDoc.
+### Exercises
 
-Each exercise is accompanied by a test class to ensure the correctness of the implemented functionalities.
+1. **Hollow Matrix Conversion**
+   - A program that converts a traditional matrix to a sparse matrix (hollow matrix) and vice versa.
+   
+2. **Pharo Documentation Generator**
+   - A program that generates documentation for Pharo classes and packages, similar to JavaDoc.
 
----
+Each exercise is accompanied by a **test class** that ensures the correctness of the implemented functionalities.
 
 ## Exercise 1: Hollow Matrix Conversion
 
 ### Description
+The `MatrixConverter` class provides functionality to convert a traditional matrix (2D array) into a sparse (hollow) matrix and vice versa. 
 
-The `MatrixConverter` class provides functionality to:
-
-- Convert a traditional matrix (2D array) into a sparse matrix.
-- Convert a sparse matrix back into a traditional matrix.
-
-**Sparse Matrix Representation**: An array of non-zero values with their positions (`row`, `column`, `value`).
-
----
+- **`convertToSparseMatrix:`** Converts a traditional matrix to a sparse matrix representation.
+- **`convertToTraditionalMatrix:`** Converts a sparse matrix back into a traditional matrix.
 
 ### MatrixConverter Class
+
+The `MatrixConverter` class handles the conversion between traditional and sparse matrix formats. Below is the class definition:
 
 ```smalltalk
 Class MatrixConverter {
@@ -33,42 +33,44 @@ Class MatrixConverter {
     instVars: ['traditionalMatrix', 'sparseMatrix'],
     category: 'HollowMatrix'
 }
-
 ```
+### Methods
 
-## Methods
+1. **`convertToSparseMatrix: aTraditionalMatrix`**
+   - Converts a traditional matrix into a sparse matrix representation.
+   
+2. **`convertToTraditionalMatrix: aSparseMatrix`**
+   - Converts a sparse matrix back into a traditional matrix.
+   
+3. **`sparseMatrix`**
+   - Returns the current sparse matrix.
+   
+4. **`sparseMatrix: aSparseMatrix`**
+   - Sets a new sparse matrix.
 
-### `convertToSparseMatrix: aTraditionalMatrix`
-Converts a traditional matrix into a sparse matrix representation.
+5. **`traditionalMatrix`**
+   - Returns the current traditional matrix.
+   
+6. **`traditionalMatrix: aMatrix`**
+   - Sets a new traditional matrix.
 
-### `convertToTraditionalMatrix: aSparseMatrix`
-Converts a sparse matrix back into a traditional matrix.
-
-### `sparseMatrix`
-Returns the current sparse matrix.
-
-### `sparseMatrix: aSparseMatrix`
-Sets a new sparse matrix.
-
-### `traditionalMatrix`
-Returns the current traditional matrix.
-
-### `traditionalMatrix: aMatrix`
-Sets a new traditional matrix.
-
+---
+### Test Screenshots 
 ## Test Class: MatrixConverterTest
 
-The `MatrixConverterTest` class ensures that the methods in the `MatrixConverter` class work as intended.
+The `MatrixConverterTest` class verifies that the methods in the `MatrixConverter` class work correctly.
 
 ### Test Methods
 
-#### `testConvertToSparseMatrix`
-Tests the conversion of a traditional matrix to a sparse matrix.
+- **`testConvertToSparseMatrix:`**
+   - Tests the conversion from a traditional matrix to a sparse matrix.
 
-#### `testConvertToTraditionalMatrix`
-Tests the conversion of a sparse matrix back to a traditional matrix.
+- **`testConvertToTraditionalMatrix:`**
+   - Tests the conversion from a sparse matrix to a traditional matrix.
 
-## Example Test Class
+### MatrixConverterTest Class
+
+The `MatrixConverterTest` class is a unit test class that ensures the correctness of the `MatrixConverter` methods. Below is the class definition:
 
 ```smalltalk
 Test Class MatrixConverterTest {
@@ -77,16 +79,69 @@ Test Class MatrixConverterTest {
     category: 'HollowMatrix'
 }
 ```
+## Exercise 2: Pharo Documentation Generator
 
+### Description
+The `PharoDoc` class generates documentation for Pharo classes and packages, mimicking the functionality of JavaDoc but specifically for the Pharo environment.
 
+- **`classesInPackage: packageName`**: Returns all classes in a given package.
+- **`documentClass: aClass`**: Generates documentation for a single class, including its superclass, subclasses, instance variables, and methods.
+- **`documentPackage: packageName`**: Generates documentation for all classes in a package.
 
-Test Methods
-testClassesInPackage: Ensures the correct classes are retrieved for a given package.
-testDocumentClass: Verifies the correctness of the generated documentation for a single class.
-testDocumentPackage: Ensures the documentation for an entire package is correctly generated.
+### PharoDoc Class
+
+The `PharoDoc` class generates structured documentation for Pharo classes and packages. Below is the class definition:
 
 ```smalltalk
-Copy code
+Class PharoDoc {
+    name: 'PharoDoc',
+    superclass: 'Object',
+    instVars: ['package'],
+    category: 'PharoDoc'
+}
+```
+### Methods
+
+1. **`classesInPackage: packageName`**
+   - Retrieves and lists all classes in the specified package.
+
+2. **`documentClass: aClass`**
+   - Documents the given class, including details such as its superclass, subclasses, instance variables, and methods.
+
+3. **`documentPackage: packageName`**
+   - Documents all the classes within a specified package.
+## Test Class: PharoDocTest
+
+The `PharoDocTest` class verifies the functionality of the `PharoDoc` class.
+
+### Test Methods
+
+- **`testClassesInPackage:`**
+   - Tests the `classesInPackage:` method to ensure that the correct classes are retrieved.
+
+- **`testDocumentClass:`**
+   - Tests the `documentClass:` method to ensure that the documentation for a class is correctly generated.
+
+- **`testDocumentPackage:`**
+   - Tests the `documentPackage:` method to verify that the documentation for an entire package is correctly generated.
+## Test Class: PharoDocTest
+
+The `PharoDocTest` class verifies the functionality of the `PharoDoc` class.
+
+### Test Methods
+
+- **`testClassesInPackage:`**
+   - Tests the `classesInPackage:` method to ensure that the correct classes are retrieved.
+
+- **`testDocumentClass:`**
+   - Tests the `documentClass:` method to ensure that the documentation for a class is correctly generated.
+
+- **`testDocumentPackage:`**
+   - Tests the `documentPackage:` method to verify that the documentation for an entire package is correctly generated.
+
+### PharoDocTest Class
+
+```smalltalk
 Test Class PharoDocTest {
     name: 'PharoDocTest',
     superclass: 'TestCase',
@@ -94,33 +149,18 @@ Test Class PharoDocTest {
 }
 ```
 ## Running the Tests
-###MatrixConverter Tests
-To run the tests for the MatrixConverter class:
 
-smalltalk
-Copy code
-testMatrixConverterTest
-PharoDoc Tests
-To run the tests for the PharoDoc class:
+1. **MatrixConverter Tests**:
+   To run the tests for the `MatrixConverter` class:
 
-smalltalk
-Copy code
-testPharoDocTest
-Installation
-Install Pharo from the official Pharo website.
-Clone this repository:
-bash
-Copy code
-git clone <repository_url>
-Load the project into Pharo.
-Contribution
-We welcome contributions to this repository! Feel free to:
+   ```smalltalk
+   testMatrixConverterTest
+## Installation
 
-Fork the repository.
-Make changes or add new features.
-Submit a pull request.
-Note: Ensure all new features are thoroughly tested before submitting.
+To run the code and tests , Clone this repository:
 
-License
-This repository is licensed under the MIT License. Feel free to use and modify the code.
+   ```bash
+   git clone <repository_url>
+```
+
 
