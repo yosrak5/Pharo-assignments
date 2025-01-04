@@ -109,6 +109,8 @@ Test Class PharoDocTest {
 The `MatrixConverterApp` is currently under development. This application will provide a user-friendly interface to interact with the `MatrixConverter` class and its methods. 
 
 I will push it to this repository as soon as it is completed.
+![image](https://github.com/user-attachments/assets/60edf601-b0b2-4c67-9d1f-e843a1d6e1b6)
+
 
 ## Installation
 
