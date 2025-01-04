@@ -34,17 +34,41 @@ Class MatrixConverter {
     category: 'HollowMatrix'
 }
 
-# MatrixConverterTest - HollowMatrix
+```
 
-## Test Methods
+## Methods
 
-### `testConvertToSparseMatrix`
+### `convertToSparseMatrix: aTraditionalMatrix`
+Converts a traditional matrix into a sparse matrix representation.
+
+### `convertToTraditionalMatrix: aSparseMatrix`
+Converts a sparse matrix back into a traditional matrix.
+
+### `sparseMatrix`
+Returns the current sparse matrix.
+
+### `sparseMatrix: aSparseMatrix`
+Sets a new sparse matrix.
+
+### `traditionalMatrix`
+Returns the current traditional matrix.
+
+### `traditionalMatrix: aMatrix`
+Sets a new traditional matrix.
+
+## Test Class: MatrixConverterTest
+
+The `MatrixConverterTest` class ensures that the methods in the `MatrixConverter` class work as intended.
+
+### Test Methods
+
+#### `testConvertToSparseMatrix`
 Tests the conversion of a traditional matrix to a sparse matrix.
 
-### `testConvertToTraditionalMatrix`
+#### `testConvertToTraditionalMatrix`
 Tests the conversion of a sparse matrix back to a traditional matrix.
 
-## Test Class: `MatrixConverterTest`
+## Example Test Class
 
 ```smalltalk
 Test Class MatrixConverterTest {
@@ -52,20 +76,25 @@ Test Class MatrixConverterTest {
     superclass: 'TestCase',
     category: 'HollowMatrix'
 }
+```
+
+
 
 Test Methods
 testClassesInPackage: Ensures the correct classes are retrieved for a given package.
 testDocumentClass: Verifies the correctness of the generated documentation for a single class.
 testDocumentPackage: Ensures the documentation for an entire package is correctly generated.
-smalltalk
+
+```smalltalk
 Copy code
 Test Class PharoDocTest {
     name: 'PharoDocTest',
     superclass: 'TestCase',
     category: 'PharoDoc'
 }
-Running the Tests
-MatrixConverter Tests
+```
+## Running the Tests
+###MatrixConverter Tests
 To run the tests for the MatrixConverter class:
 
 smalltalk
