@@ -90,30 +90,8 @@ Class PharoDoc {
 
 The `PharoDocTest` class verifies the functionality of the `PharoDoc` class.
 
-### Test Methods
 
-- **`testClassesInPackage:`**
-   - Tests the `classesInPackage:` method to ensure that the correct classes are retrieved.
 
-- **`testDocumentClass:`**
-   - Tests the `documentClass:` method to ensure that the documentation for a class is correctly generated.
-
-- **`testDocumentPackage:`**
-   - Tests the `documentPackage:` method to verify that the documentation for an entire package is correctly generated.
-## Test Class: PharoDocTest
-
-The `PharoDocTest` class verifies the functionality of the `PharoDoc` class.
-
-### Test Methods
-
-- **`testClassesInPackage:`**
-   - Tests the `classesInPackage:` method to ensure that the correct classes are retrieved.
-
-- **`testDocumentClass:`**
-   - Tests the `documentClass:` method to ensure that the documentation for a class is correctly generated.
-
-- **`testDocumentPackage:`**
-   - Tests the `documentPackage:` method to verify that the documentation for an entire package is correctly generated.
 
 ### PharoDocTest Class
 
@@ -124,6 +102,8 @@ Test Class PharoDocTest {
     category: 'PharoDoc'
 }
 ```
+![image](https://github.com/user-attachments/assets/9e5879c8-947e-49a3-8e00-c53ff8fa3848)
+
 ## Running the Tests
 
 1. **MatrixConverter Tests**:
