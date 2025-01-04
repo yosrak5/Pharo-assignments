@@ -53,6 +53,8 @@ Test Class MatrixConverterTest {
     category: 'HollowMatrix'
 }
 ```
+![image](https://github.com/user-attachments/assets/5b4b8135-8d10-49d5-878c-3959ba052c2b)
+
 ## Exercise 2: Pharo Documentation Generator
 
 ### Description
