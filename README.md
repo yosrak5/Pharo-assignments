@@ -1,8 +1,8 @@
-# Task Documentation: Pharo Exercises for Fortran Code Migration
+# Task Documentation
 
 ## Overview
 
-This repository contains two exercises, implemented in Pharo, as part of the task to experiment with the migration of Fortran code. The exercises demonstrate different aspects of the migration process and include tests to validate the functionalities.
+This repository contains two exercises, implemented in Pharo, as part of the requested task . The exercises demonstrate different aspects of the migration process and include tests to validate the functionalities.
 
 ### Exercises
 
