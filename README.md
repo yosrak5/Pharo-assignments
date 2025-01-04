@@ -104,13 +104,12 @@ Test Class PharoDocTest {
 ```
 ![image](https://github.com/user-attachments/assets/9e5879c8-947e-49a3-8e00-c53ff8fa3848)
 
-## Running the Tests
+## Under Development 
 
-1. **MatrixConverter Tests**:
-   To run the tests for the `MatrixConverter` class:
+The `MatrixConverterApp` is currently under development. This application will provide a user-friendly interface to interact with the `MatrixConverter` class and its methods. 
 
-   ```smalltalk
-   testMatrixConverterTest
+I will push it to this repository as soon as it is completed.
+
 ## Installation
 
 To run the code and tests , Clone this repository:
