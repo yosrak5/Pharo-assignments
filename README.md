@@ -160,7 +160,7 @@ Test Class PharoDocTest {
 To run the code and tests , Clone this repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/yosrak5/Pharo-assignments.git
 ```
 
 
