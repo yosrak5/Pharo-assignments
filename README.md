@@ -7,7 +7,7 @@ This repository contains two exercises implemented in Pharo, as part of the requ
 ### Exercises
 
 1. **Hollow Matrix Conversion**
-   - A program that converts a traditional matrix to a sparse matrix (hollow matrix) and vice versa.
+   - A program that converts a traditional matrix (array of arrays) to a sparse matrix (hollow matrix) and vice versa. The hollow matrix representation stores only non-zero elements along with their respective indices, providing a memory-efficient solution for sparse data.
    
 2. **Pharo Documentation Generator**
    - A program that generates documentation for Pharo classes and packages, similar to JavaDoc.
