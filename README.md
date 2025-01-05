@@ -80,12 +80,20 @@ Class PharoDoc {
 
 1. **`classesInPackage: packageName`**
    - Retrieves and lists all classes in the specified package.
+   ![image](https://github.com/user-attachments/assets/7fe06f65-3355-4750-a568-00d74094f896)
+
 
 2. **`documentClass: aClass`**
    - Documents the given class, including details such as its superclass, subclasses, instance variables, and methods.
+   ![image](https://github.com/user-attachments/assets/7469a924-9089-4a12-a2d5-9199fb55f76c)
+
 
 3. **`documentPackage: packageName`**
    - Documents all the classes within a specified package.
+   ![image](https://github.com/user-attachments/assets/0b414349-56be-4527-b34f-f9646684eab3)
+   ![image](https://github.com/user-attachments/assets/11de9722-da8b-4ea1-9f69-1b648596605a)
+
+
 ## Test Class: PharoDocTest
 
 The `PharoDocTest` class verifies the functionality of the `PharoDoc` class.
