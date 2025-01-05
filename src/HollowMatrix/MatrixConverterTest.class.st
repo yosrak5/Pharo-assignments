@@ -8,7 +8,7 @@ Class {
 MatrixConverterTest >> testConvertToSparseMatrix [
 
 	| traditionalMatrix expectedSparseMatrix resultSparseMatrix converter |
-	"Set up a traditional matrix"
+	"Set up a 2D matrix"
 	traditionalMatrix := { 
 		                     { 1. 0. 0 }.
 		                     { 0. 2. 0 }.
@@ -20,7 +20,7 @@ MatrixConverterTest >> testConvertToSparseMatrix [
 		                        { 2. 2. 2 }.
 		                        { 3. 3. 3 } }.
 
-	"Create a MatrixConverter instance"
+	
 	converter := MatrixConverter new.
 	converter traditionalMatrix: traditionalMatrix.
 
@@ -28,7 +28,7 @@ MatrixConverterTest >> testConvertToSparseMatrix [
 	resultSparseMatrix := converter convertToSparseMatrix:
 		                      traditionalMatrix.
 
-	"Test the expected and actual results"
+	
 	self assert: resultSparseMatrix equals: expectedSparseMatrix
 ]
 
@@ -43,20 +43,18 @@ MatrixConverterTest >> testConvertToTraditionalMatrix [ [
         #(3 2 15)
     ).
 
-    "Set up the expected traditional matrix"
+    "Set up the expected matrix"
     expectedTraditionalMatrix := { 
         { 5. 0. 0. 0 }.
         { 0. 0. 10. 0 }.
         { 0. 15. 0. 0 } 
     }.
 
-    "Create a MatrixConverter instance"
+  
     converter := MatrixConverter new.
 
-    "Call the method with the correct argument"
     resultTraditionalMatrix := converter convertToTraditionalMatrix: sparseMatrix.
 
-    "Assert the result"
     self assert: resultTraditionalMatrix equals: expectedTraditionalMatrix.
 ]
 
