@@ -17,13 +17,13 @@ MatrixConverter >> convertToSparseMatrix: aTraditionalMatrix [
 
     "Iterate through the traditional matrix row by row."
     aTraditionalMatrix doWithIndex: [ :row :rowIndex |
-        "Iterate through each value in the row."
+
         row doWithIndex: [ :value :colIndex |
             "If the value is not zero, add its position and value to the sparse matrix."
             value ~= 0 ifTrue: [
                 sparse add: { rowIndex. colIndex. value } ] ] ].
 
-    "Convert the collection to an array and return it."
+    
     ^ sparse asArray
 
 ]
@@ -51,7 +51,7 @@ MatrixConverter >> convertToTraditionalMatrix: aSparseMatrix [
         value := entry at: 3.
         (traditionalMatrix at: rowIndex) at: colIndex put: value ].
 
-    "Return the traditional matrix."
+   
     ^ traditionalMatrix
 
 ]
