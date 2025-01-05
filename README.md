@@ -26,12 +26,10 @@ The `MatrixConverter` class provides functionality to convert a traditional matr
 The `MatrixConverter` class handles the conversion between traditional and sparse matrix formats. Below is the class definition:
 
 ```smalltalk
-Class MatrixConverter {
-    name: 'MatrixConverter',
-    superclass: 'Object',
-    instVars: ['traditionalMatrix', 'sparseMatrix'],
-    category: 'HollowMatrix'
-}
+Object subclass: #MatrixConverter
+	instanceVariableNames: 'traditionalMatrix sparseMatrix'
+	classVariableNames: ''
+	package: 'HollowMatrix'
 ```
 ### Methods
 
@@ -47,11 +45,10 @@ Class MatrixConverter {
 The `MatrixConverterTest` class is a unit test class that ensures the correctness of the `MatrixConverter` methods. Below is the class definition:
 
 ```smalltalk
-Test Class MatrixConverterTest {
-    name: 'MatrixConverterTest',
-    superclass: 'TestCase',
-    category: 'HollowMatrix'
-}
+TestCase subclass: #MatrixConverterTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	package: 'HollowMatrix'
 ```
 ![image](https://github.com/user-attachments/assets/5b4b8135-8d10-49d5-878c-3959ba052c2b)
 
@@ -69,12 +66,10 @@ The `PharoDoc` class generates documentation for Pharo classes and packages, mim
 The `PharoDoc` class generates structured documentation for Pharo classes and packages. Below is the class definition:
 
 ```smalltalk
-Class PharoDoc {
-    name: 'PharoDoc',
-    superclass: 'Object',
-    instVars: ['package'],
-    category: 'PharoDoc'
-}
+Object subclass: #PharoDoc
+	instanceVariableNames: 'package'
+	classVariableNames: ''
+	package: 'PharoDoc'
 ```
 ### Methods
 
@@ -104,11 +99,10 @@ The `PharoDocTest` class verifies the functionality of the `PharoDoc` class.
 ### PharoDocTest Class
 
 ```smalltalk
-Test Class PharoDocTest {
-    name: 'PharoDocTest',
-    superclass: 'TestCase',
-    category: 'PharoDoc'
-}
+TestCase subclass: #PharoDocTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	package: 'PharoDoc'
 ```
 ![image](https://github.com/user-attachments/assets/9e5879c8-947e-49a3-8e00-c53ff8fa3848)
 
